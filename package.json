@@ -2,7 +2,7 @@
   "name": "saveable_services",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts/index.js",
+  "main": "assets/js/index.js",
   "dependencies": {
     "detect-libc": "^2.1.2",
     "fdir": "^6.5.0",
