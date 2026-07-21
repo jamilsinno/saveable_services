@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: stretch;
+    position: sticky;
+    top: 0;
 
     .header-call{
         background-color: var(--color-tertiary);
@@ -47,6 +49,7 @@
         align-items:center;
         padding: var(--padding-base);
         box-shadow: var(--shadow-small-black);
+        background-color: var(--color-primary);
 
         a{
             text-decoration: none;
