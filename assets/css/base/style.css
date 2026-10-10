@@ -19,6 +19,7 @@
     --gap-medium: 0.5rem;
     --gap-small: 0.25rem;
     --padding-base: 1rem;
+    --padding-small: 0.5rem;
     --shadow-small-black: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.2);
     --shadow-small-red: 0.125rem 0.125rem 0.25rem rgba(255,0,0,0.2);
     --text-primary: var(--color-secondary);
@@ -108,4 +109,15 @@ body{
     gap: var(--gap-medium);
     color: var(--text-primary);
     font-weight: var(--font-weight-medium);
+
+    &:hover{
+        color: var(--text-secondary);
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    padding: var(--padding-base);
 }

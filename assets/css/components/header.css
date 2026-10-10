@@ -12,8 +12,8 @@
         color: var(--color-primary);
         font: var(--font-size-large);
         width: 100%;
-        padding: var(--padding-base);
         box-shadow: var(--shadow-small-red);
+        padding: var(--padding-small);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -28,7 +28,14 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            padding: var(--padding-small);
+            border-radius: var(--border-radius);
+            text-decoration: none;
 
+            &:hover{
+                background-color: var(--color-primary);
+                color: var(--text-primary);
+            }   
             &:focus-visible{
                 outline: 2px solid var(--color-primary);
             }
@@ -76,9 +83,13 @@
             li{
                 list-style: none;
                 a{
-                    color: var(--color-secondary);
+                    color: var(--text-primary);
                     font-weight: var(--font-weight-bold);
                     text-decoration: underline;
+                
+                    &:hover{
+                        color: var(--text-secondary);
+                    }
                 }
             }
         }
