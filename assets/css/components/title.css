@@ -23,4 +23,5 @@
     text-align: center;
     font-size: var(--font-size-xlarge);
     font-weight: var(--font-weight-bold);
+    padding: var(--padding-base);
 }

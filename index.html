@@ -32,9 +32,10 @@
 </head>
 
 <body>
+    <a id="home" href="#content" class="skipToMainContent">Skip to main content</a>
     <header class="header">
         <div class="header-call">
-            <a href="tel:+19028021324">
+            <a href="tel:+19028021324" class="contact">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
                     aria-hidden="true">
                     <title>Call&nbsp;Now</title>
@@ -51,21 +52,49 @@
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#howItWorks">How It Works</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="container">
+    <section id="content" class="container">
         <hgroup class="title-container">
             <h1 class="title">Saveable Services</h1>
             <p class="hook">Handyman and Automotive Services in Halifax, Nova Scotia.</p>
         </hgroup>
 
+        <section id="howItWorks">
+            <h2 class="subtitle">How It Works</h2>
+            <div class="how-it-works-container">
 
-        <section>
+                <div class="step">
+                    <h3 class="step-title">Step 1: Book Appointment</h3>
+                    <p class="step-description"> <a href="tel:+19028021324"
+                            class="step-contact">Call&nbsp;now:&nbsp;+1&nbsp;(902)&nbsp;802&#8209;1324
+                        </a>&nbsp;or <a href="#contact" class="step-contact">contact us via email</a> to schedule your
+                        appointment.
+                    </p>
+                </div>
+                <div class="step">
+                    <h3 class="step-title">Step 2: Technician Arrives</h3>
+                    <p class="step-description">
+                        Our technicians will arrive at your location and provide a free estimate for your service
+                        needs.
+                    </p>
+                </div>
+                <div class="step">
+                    <h3 class="step-title">Step 3: Pay &amp; Service Begins</h3>
+                    <p class="step-description">
+                        Once your payment is processed, our technicians will begin the service you have scheduled.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="services">
             <h2 class="subtitle">Services</h2>
             <div class="services-container">
                 <div class="service">
@@ -80,27 +109,6 @@
                             optimal
                             condition.
                         </p>
-                        <!-- <ul>
-                        Here's what typically is included in a 21-point inspection:
-                        <li>Wiper Blades</li>
-                        <li>Wiper Fluid Reservoirs</li>
-                        <li>Exterior Lights</li>
-                        <li>Transmission fluid levels</li>
-                        <li>Brake fluid levels</li>
-                        <li>Power Steering fluid levels</li>
-                        <li>antifreeze fluid levels</li>
-                        <li>Radiator and components</li>
-                        <li>Belts and pulleys</li>
-                        <li>Filters</li>
-                        <li>Horn</li>
-                        <li>Battery</li>
-                        <li>Suspension System</li>
-                        <li>Axle Parts</li>
-                        <li>Brake System</li>
-                        <li>Tires</li>
-                        <li>Exhaust System</li>
-                        <li>Steering System</li>
-                    </ul> -->
                         <span class="service-price">Starting at $59</span>
                     </div>
                 </div>
@@ -157,12 +165,26 @@
                             Get
                             in touch and let us know what you need!
                         </p>
+
+                        <a href="tel:+19028021324" class="contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <title>Call&nbsp;Now</title>
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor"
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+                            </svg>
+                            <span class="header-call-text">Call&nbsp;Now:&nbsp;+1&nbsp;(902)&nbsp;802&#8209;1324</span>
+                        </a>
                         <span class="service-price">Starting at $29</span>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+    <footer class="footer">
+        <p>&copy; 2026 Saveable Services. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+.how-it-works-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: var(--gap-medium);
+
+    .step{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: var(--gap-medium);
+        padding: var(--padding-base);
+        background-color: var(--color-primary);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-small-black);
+        max-width: 300px;
+        color: var(--text-primary);
+        font-size: 1rem;
+
+        .step-contact{
+            color: var(--text-primary);
+            font-weight: var(--font-weight-bold);
+        }
+    }
+}

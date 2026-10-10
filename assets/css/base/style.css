@@ -19,6 +19,8 @@
     --padding-base: 1rem;
     --shadow-small-black: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.2);
     --shadow-small-red: 0.125rem 0.125rem 0.25rem rgba(255,0,0,0.2);
+    --text-primary: var(--color-secondary);
+    --text-secondary: var(--color-tertiary);
 }
 
 html,
@@ -31,7 +33,6 @@ html,
     width: auto;
     max-width: 100%;
     &:focus-visible{
-        outline: 2px dashed var(--color-tertiary);
         mix-blend-mode: difference;
     }
 }
@@ -51,6 +52,41 @@ body{
     justify-content: flex-start;
 }
 
+.skipToMainContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+
+}
+.skipToMainContent:focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-medium);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-medium);
+    padding: var(--padding-base) 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+}
+
 .container{
     max-width: 60rem;
     display: flex;
@@ -59,4 +95,15 @@ body{
     justify-content: flex-start;
     gap: var(--gap-large);
     padding: var(--padding-base) 0;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-medium);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-medium);
 }
