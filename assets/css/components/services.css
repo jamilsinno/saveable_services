@@ -49,3 +49,7 @@
         }
     }
 }
+
+.contact{
+    font-weight: var(--font-weight-bold);
+}
